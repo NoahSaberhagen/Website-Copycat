@@ -6,7 +6,7 @@ function toggleMenu(){
 
     if (checkMenuClass == 'menu-off'){
         hiddenMenu.setAttribute('class', 'menu-on');
-        background.setAttribute('style', 'opacity: 20%');
+        background.setAttribute('style', 'opacity: 10%');
         body.setAttribute('style', 'background-color: white');
     }
     else {

@@ -134,3 +134,12 @@ body {
     from {opacity: 100%;}
     to {opacity: 0%;}
 }
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------screen resizing*/
+@media only screen and (max-width: 1000px){
+    .nav-container {
+        position: absolute;
+        left: calc(50% - 175px);
+    }
+}
