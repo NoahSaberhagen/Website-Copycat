@@ -1,11 +1,15 @@
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------global*/
+
 body {
     margin: 0;
     font-family: Open Sans;
-    font-weight: 500;
+    font-weight: 800;
     font-size: x-large;
 }
 
-/*background stuff-------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------background display*/
 .display {
     display: flex;
     background-color: #ebbbc5;
@@ -21,11 +25,43 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/*nav bar thingy---------------------------------------------------------------*/
-.nav-menu__header-button {
-    background-color: white;
-    height: 50px;
+
+/*-----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------nav bar thingy*/
+.nav-container{ 
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     width: 350px;
+}
+
+.nav-container__header {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    margin: 0;
     z-index: 10;
 }
+
+.nav-container__header > * {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.nav-container__header > :nth-child(1) { /*-------------------nav columns width*/
+    width: 15%;
+}
+.nav-container__header > :nth-child(2) { /*-------------------nav columns width*/
+    width: 60%;
+}
+.nav-container__header > :nth-child(3) { /*-------------------nav columns width*/
+    width: 25%;
+}
+
+.nav-container__unlockable-menu { /*----------------------------unlockable menu*/
+    background-color: white;
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
