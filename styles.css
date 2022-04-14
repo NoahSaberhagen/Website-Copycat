@@ -12,18 +12,18 @@ body {
 /*-----------------------------------------------------------background display*/
 .display {
     display: flex;
-    background-color: #ebbbc5;
+    background-color: #dfb8c0;
     height: 100vh;
     z-index: 0;
 }
 
-.display__img {
-    height: 420px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    .display__img {
+        height: 420px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 
 /*-----------------------------------------------------------------------------*/
@@ -35,49 +35,58 @@ body {
     width: 350px;
 }
 
-.nav-container__header {
-    background-color: white;
-    display: flex;
-    height: 50px;
-    margin: 0;
-    z-index: 10;
-}
+    .nav-container__header {
+        background-color: white;
+        display: flex;
+        height: 50px;
+        margin: 0;
+        z-index: 10;
+    }
 
-.nav-container__header > :nth-child(1) {
-    line-height: 50px;
-    margin: 0;
-    width: 40px;
-    padding-left: 10px;
-}
-.nav-container__header > :nth-child(2) {
-    line-height: 50px;
-    margin: 0;
-    width: 240px;
-    padding-left: 10px;   
-}
-.nav-container__header > :nth-child(3) {
-    width: 50px;
-}
+        .nav-container__header > :nth-child(1) {
+            line-height: 50px;
+            margin: 0;
+            width: 40px;
+            padding-left: 10px;
+        }
+
+        .nav-container__header > :nth-child(2) {
+            line-height: 50px;
+            margin: 0;
+            width: 235px;
+            padding-left: 15px;   
+        }
+
+        .nav-container__header > :nth-child(3) {
+            width: 50px;
+        }
 
 .nav-container__menu-key {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 20px 0;
 }
 
-[class^=nav-container__menu-key__hamburger] {
-    background-color: black;
-    height: 2px;
-    margin: auto;
-    width: 20px;
-}
+    [class^=nav-container__menu-key__hamburger-] {
+        background-color: black;
+        height: 2px;
+        margin: auto;
+        width: 15px;
+    }
 
-.nav-container__unlockable-menu {
-    background-color: white;
+.menu-off {
     display: none;
+}
+
+.menu-on {
+    background-color: white;
+    display: flex;
     height: 100%;
     width: 100%;
+    transition: all 1s;
 }
+   
 
 /*-----------------------------------------------------------------------------*/
 /*--------------------------------------transforms, transitions, and animations*/
