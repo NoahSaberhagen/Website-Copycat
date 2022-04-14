@@ -2,6 +2,7 @@
 /*-----------------------------------------------------------------------global*/
 
 body {
+    background-color: #dfb8c0;
     margin: 0;
     font-family: Open Sans;
     font-weight: 800;
@@ -12,7 +13,6 @@ body {
 /*-----------------------------------------------------------background display*/
 .display {
     display: flex;
-    background-color: #dfb8c0;
     height: 100vh;
     z-index: 0;
 }
@@ -75,21 +75,32 @@ body {
         width: 15px;
     }
 
+    .nav-container__menu-key:hover {
+        cursor: pointer;
+    }
+
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------------transforms, transitions, and animations*/
 .menu-off {
     display: none;
 }
 
 .menu-on {
+    animation-name: fade-in;
+    animation-duration: .5s;
     background-color: white;
     display: flex;
     height: 100%;
     width: 100%;
-    transition: all 1s;
 }
-   
 
-/*-----------------------------------------------------------------------------*/
-/*--------------------------------------transforms, transitions, and animations*/
-.nav-container__menu-key:hover {
-    cursor: pointer;
+@keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes fade-out {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
 }

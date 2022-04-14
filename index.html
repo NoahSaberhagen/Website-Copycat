@@ -12,24 +12,25 @@
 </head>
 <body>
     <main>
+        <nav class="nav-container">
+            <div class="nav-container__header">
+                <p>ⓒ</p>
+                <p>toe.st</p>
+                <div class="nav-container__menu-key" onclick="toggleMenu();">
+                    <div class="nav-container__menu-key__hamburger-top"></div>
+                    <div class="nav-container__menu-key__hamburger-bottom"></div>
+                </div>
+            </div>
+            <div id="hidden-menu" class="menu-off">
+                <div class="hidden-menu__left-column"></div>
+                <ul class="hidden-menu__list">
+                    <li class="hidden-menu__list-item">1</li>
+                    <li class="hidden-menu__list-item">2</li>
+                    <li class="hidden-menu__list-item">3</li>
+                </ul>
+            </div>
+        </nav>
         <div class="display">
-            <nav class="nav-container">
-                <div class="nav-container__header">
-                    <p>ⓒ</p>
-                    <p>toe.st</p>
-                    <div class="nav-container__menu-key" onclick="toggleMenu();">
-                        <div class="nav-container__menu-key__hamburger-top"></div>
-                        <div class="nav-container__menu-key__hamburger-bottom"></div>
-                    </div>
-                </div>
-                <div id="hidden-menu" class="menu-off">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                </div>
-            </nav>
             <img class="display__img" src="./assets/toe-doku-en-kai.jpg" alt="doku-en-kai album cover">
         </div>
     </main>
